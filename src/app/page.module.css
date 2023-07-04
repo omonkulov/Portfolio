@@ -7,22 +7,28 @@
 .heroContainer{
   background-color: #1A1A29;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 25px;
+  width: 100%;
+  max-width: 1280px;
 }
 
 .heroLeft{
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
+  margin-left: 50px;
+}
+
+.heroLeft > p {
+  max-width: 400px;
 }
 
 .heroRight{
-  flex: 1;
+  width: 500px;
 }
 
 .buttons{
