@@ -1,0 +1,32 @@
+.root{
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.logo{
+  font-weight: 600;
+  font-size: x-large;
+  cursor: default;
+  user-select: none;
+}
+
+.links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.links > * {
+  color: white;
+  font-size: large;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
