@@ -1,0 +1,83 @@
+.root{
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  width: min(80vw, 950px);
+}
+
+.sectionTitle > h2{
+  color: #7562E0;
+}
+
+.sectionBody{
+  margin-top: 20px;
+}
+
+.sectionExperince{
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.sectionExperince > p:first-child{
+  font-size: 50px;
+  color: #7562E0;
+  font-weight: bold;
+}
+
+
+.skills{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skills > div:first-child{
+  background-color: #7562E0;
+}
+
+.skill{
+  width: 220px;
+  height: 220px;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 10px;
+  font-size: large;
+  font-weight: 700;
+}
+
+.skill > svg {
+  width: 50px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .root{
+    justify-content: center;
+    width: 95vw;
+  }
+  .skill{
+    width: 100px;
+    height: 100px;
+    padding: 6px;
+    gap: 5px;
+    font-size: 10px;
+  }
+  .skill > svg {
+    width: 25px;
+    margin-bottom: 10px
+  }
+}
