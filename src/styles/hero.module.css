@@ -1,87 +1,86 @@
-.root {
+.svgContainer {
   width: 100%;
   height: 100%;
 }
 
-.slideLeft {
-  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.heroContainer{
+  background-color: #1A1A29;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px;
+  width: 100%;
+  max-width: 1280px;
 }
 
-@keyframes slide-left {
-  0% {
-    transform: translateX(150px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.heroLeft{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  margin-left: 50px;
 }
 
-.slideRight {
-  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.heroLeft > p {
+  max-width: 400px;
 }
 
-@keyframes slide-right {
-  0% {
-    transform: translateX(-150px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.heroRight{
+  width: 500px;
 }
 
-.slideHuman {
-  animation: slide-human 10s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.buttons{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 40px;
 }
 
-@keyframes slide-human {
-  0%, 40% {
-    transform: translateX(15%);
-  }
-  50%, 60%{
-    transform: translateX(-15%);
-  }
-  70%, 100% {
-    transform: translateX(15%);
-  }
+.buttonAboutMe{
+  background-color: #7562E0;
+  padding: 10px 18px 10px 18px;
+  border-radius: 6px;
+  font-size: small;
+  font-weight: 600;
+  color: white;
+  border: none;
+  outline: 2px solid #7562E0;
+  user-select: none;
 }
 
-.bounceIn {
-  animation: bounce-in-top 1.1s both;
+.buttonAboutMe:active{
+  background-color: #2b2354;
+  outline: 2px solid #2b2354;
 }
 
-@keyframes bounce-in-top {
-  0% {
-    transform: translateY(-500px);
-    animation-timing-function: ease-in;
-    opacity: 0;
+.buttonResume{
+  background-color: transparent;
+  outline: 2px solid #7562E0;
+  padding: 10px 18px 10px 18px;
+  border-radius: 6px;
+  font-size: small;
+  font-weight: 600;
+  color: white;
+  border: none;
+  user-select: none;
+}
+
+.buttonResume:active{
+  background-color: #2b2354;
+  outline: 2px solid #2b2354;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .heroContainer{
+    flex-direction: column-reverse;
   }
-  38% {
-    transform: translateY(0);
-    animation-timing-function: ease-out;
-    opacity: 1;
+  .heroRight{    
+    width: 90%;
+    margin: 20px;
   }
-  55% {
-    transform: translateY(-65px);
-    animation-timing-function: ease-in;
-  }
-  72% {
-    transform: translateY(0);
-    animation-timing-function: ease-out;
-  }
-  81% {
-    transform: translateY(-28px);
-    animation-timing-function: ease-in;
-  }
-  90% {
-    transform: translateY(0);
-    animation-timing-function: ease-out;
-  }
-  95% {
-    transform: translateY(-8px);
-    animation-timing-function: ease-in;
-  }
-  100% {
-    transform: translateY(0);
-    animation-timing-function: ease-out;
+  .heroLeft{
+    margin: 0px;
   }
 }

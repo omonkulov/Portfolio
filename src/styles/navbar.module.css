@@ -7,6 +7,7 @@
   padding: 15px;
   margin-top: 5px;
   margin-bottom: 5px;
+  width: 80vw;
 }
 
 .logo{
@@ -29,4 +30,20 @@
   font-weight: 500;
   cursor: pointer;
   user-select: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .root{
+    width: 90vw;
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .root{
+    justify-content: center;
+  }
+  .logo{
+    display: none;
+  }
 }
