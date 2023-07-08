@@ -1,14 +1,23 @@
-import React from 'react'
+import Image from 'next/image';
+import React from 'react';
+import styles from "../styles/skills.module.css";
 
-interface props{
-  icon: any,
-  label: string,
-  
+interface skill {
+  image: string;
+  title: string;
 }
 
-function Skill() {
+interface props{
+  skill: skill;
+}
+
+function Skill({skill}:props) {
+
   return (
-    <div>Skill</div>
+    <div className={styles.skillContainer}>
+      <Image height={65} width={65} src={skill.image} alt={skill.title} />
+      <p>{skill.title}</p>
+    </div>
   )
 }
 
