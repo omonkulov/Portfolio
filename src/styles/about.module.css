@@ -54,6 +54,7 @@
   padding: 10px;
   font-size: large;
   font-weight: 700;
+  border-radius: 8px;
 }
 
 .skill > svg {
